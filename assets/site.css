@@ -1,0 +1,56 @@
+:root {
+  --bg: #0b1020;
+  --bg2: #0f1a2e;
+  --card: #131c31;
+  --fg: #e8ecf4;
+  --mute: #9aa6bd;
+  --line: #24314d;
+  --yellow: #ffd433;
+  --red: #eb3b30;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 15% -10%, #3b1220 0%, transparent 60%),
+              radial-gradient(1000px 700px at 110% 10%, #0d3a3a 0%, transparent 60%), var(--bg);
+  background-attachment: fixed;
+  color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+}
+a { color: var(--yellow); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--fg); }
+.brand img { width: 40px; height: 40px; }
+.brand span { font-weight: 800; letter-spacing: .02em; text-transform: uppercase; color: var(--yellow); }
+
+/* Home */
+.hero { text-align: center; padding-top: 24px; }
+.hero img { width: 140px; height: 140px; }
+.hero h1 {
+  font-family: Impact, "Arial Black", sans-serif; font-weight: 400;
+  font-size: clamp(40px, 11vw, 72px); line-height: 1; margin: 18px 0 8px;
+  color: var(--yellow); text-transform: uppercase; letter-spacing: .01em;
+}
+.hero .tag { font-size: clamp(20px, 5vw, 26px); font-weight: 700; margin: 0 0 8px; }
+.hero .sub { color: var(--mute); margin: 0 auto 28px; max-width: 520px; }
+.links { display: grid; gap: 12px; max-width: 460px; margin: 0 auto; }
+.links a {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 14px 18px; border-radius: 14px; background: var(--card); border: 1px solid var(--line);
+  color: var(--fg); text-decoration: none; font-weight: 650;
+}
+.links a:hover { border-color: var(--yellow); }
+.links a small { color: var(--mute); font-weight: 500; }
+
+/* Legal pages */
+.doc h1 { font-size: 34px; line-height: 1.2; margin: 28px 0 4px; }
+.doc .updated { color: var(--mute); margin: 0 0 28px; }
+.doc h2 { font-size: 21px; margin: 32px 0 8px; color: var(--yellow); }
+.doc p, .doc li { color: #d3d9e6; }
+.doc ul { padding-left: 22px; }
+.doc .box { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--mute); font-size: 14px; text-align: center; }
+footer a { color: var(--mute); margin: 0 8px; }
